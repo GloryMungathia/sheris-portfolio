@@ -1,3 +1,4 @@
+import ContactForm from "@/components/ContactForm";
 import Image from "next/image";
 import { ArrowUpRight } from "lucide-react";
 
@@ -21,7 +22,6 @@ import Navbar from "@/components/Navbar";
 export default function Home() {
   return (
     <main className="min-h-screen bg-[#fcfaff] text-[#17132b]">
-
       <Navbar />
 
       {/* =========================
@@ -31,10 +31,8 @@ export default function Home() {
         id="home"
         className="mx-auto grid max-w-7xl items-center gap-14 px-6 pb-20 pt-16 lg:grid-cols-[1.05fr_0.95fr] lg:px-10 lg:pb-28 lg:pt-24"
       >
-
         {/* LEFT */}
         <div>
-
           {/* Greeting */}
           <p className="mb-7 text-2xl font-bold leading-tight tracking-tight text-purple-600 sm:text-3xl">
             Hello, I&apos;m Glory.
@@ -57,7 +55,6 @@ export default function Home() {
               DESIGN PRINCIPLE
           ========================= */}
           <div className="mt-8 border-l-2 border-purple-300 pl-5">
-
             <p className="text-sm font-semibold uppercase tracking-[0.15em] text-purple-600">
               A principle I keep close
             </p>
@@ -66,14 +63,12 @@ export default function Home() {
               Clarity before decoration. Function with intention. Details that
               earn their place.
             </p>
-
           </div>
 
           {/* =========================
               BUTTONS
           ========================= */}
           <div className="mt-9 flex flex-wrap items-center gap-4">
-
             {/* Work button */}
             <a
               href="#work"
@@ -90,7 +85,6 @@ export default function Home() {
             >
               View CV
             </a>
-
           </div>
 
           {/* Social icons */}
@@ -108,7 +102,9 @@ export default function Home() {
 
             {/* LinkedIn */}
             <a
-              href="https://www.linkedin.com/in/glory-mung-athia-235645401/"
+              href="https://www.linkedin.com/in/glory-mung-athia-70b233445?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+              target="_blank"
+              rel="noreferrer"
               aria-label="LinkedIn"
               className="flex h-12 w-12 items-center justify-center rounded-full border border-purple-300 bg-[#efe7ff] text-purple-700 shadow-sm transition hover:-translate-y-0.5 hover:bg-[#e4d7ff] hover:shadow-md"
             >
@@ -117,7 +113,7 @@ export default function Home() {
 
             {/* Email */}
             <a
-              href="malito:gloryymungathia@gmail.com"
+              href="mailto:gloryymungathia@gmail.com"
               aria-label="Email"
               className="flex h-12 w-12 items-center justify-center rounded-full border border-purple-300 bg-[#efe7ff] text-purple-700 shadow-sm transition hover:-translate-y-0.5 hover:bg-[#e4d7ff] hover:shadow-md"
             >
@@ -125,22 +121,21 @@ export default function Home() {
             </a>
           </div>
         </div>
+
         {/* =========================
-    RIGHT SIDE - PHOTO
-========================= */}
+            RIGHT SIDE - PHOTO
+        ========================= */}
         <div className="relative flex justify-center lg:justify-end">
           {/* Soft purple glow */}
           <div className="absolute right-4 top-10 h-80 w-80 rounded-full bg-purple-200/50 blur-3xl" />
 
           <div className="relative w-full max-w-md">
-
             {/* Decorative outline */}
             <div className="absolute -right-3 -top-3 h-full w-full rounded-[3rem] border border-purple-200" />
 
             {/* Main photo frame */}
             <div className="relative overflow-hidden rounded-[3rem] bg-purple-100 p-3 shadow-[0_30px_90px_rgba(109,40,217,0.16)]">
               <div className="relative h-[620px] overflow-hidden rounded-[2.5rem] bg-white">
-
                 <Image
                   src="/images/profile.jpg"
                   alt="Portrait of Glory Mung'athia"
@@ -149,7 +144,6 @@ export default function Home() {
                   className="object-cover object-[18%_18%]"
                   sizes="(max-width: 1024px) 100vw, 450px"
                 />
-
               </div>
             </div>
 
@@ -159,14 +153,13 @@ export default function Home() {
                 Building with perspective
               </p>
             </div>
-
           </div>
         </div>
       </section>
 
       {/* =========================
-    ABOUT ME
-========================= */}
+          ABOUT ME
+      ========================= */}
       <section
         id="about"
         className="mx-auto max-w-7xl px-6 py-24 lg:px-10 lg:py-32"
@@ -178,14 +171,13 @@ export default function Home() {
           </h2>
 
           <h3 className="mt-4 text-3xl font-semibold leading-tight tracking-tight sm:text-4xl lg:text-5xl">
-            I didn&apos;t start out knowing how technology was built. I discovered
-            that I could build it.
+            I didn&apos;t start out knowing how technology was built. I
+            discovered that I could build it.
           </h3>
         </div>
 
         {/* About content */}
         <div className="mt-12 grid gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
-
           {/* Left visual */}
           <div className="relative">
             <div className="absolute -left-5 -top-5 h-24 w-24 rounded-full bg-purple-100" />
@@ -199,8 +191,8 @@ export default function Home() {
                 <div>
                   <p className="text-lg font-semibold">Understand</p>
                   <p className="mt-1 text-sm leading-6 text-slate-600">
-                    Explore how people interact with products and where their needs
-                    sit within the experience.
+                    Explore how people interact with products and where their
+                    needs sit within the experience.
                   </p>
                 </div>
 
@@ -215,16 +207,16 @@ export default function Home() {
                 <div>
                   <p className="text-lg font-semibold">Question</p>
                   <p className="mt-1 text-sm leading-6 text-slate-600">
-                    Look beyond whether something works to consider why it should
-                    exist and what could be improved.
+                    Look beyond whether something works to consider why it
+                    should exist and what could be improved.
                   </p>
                 </div>
 
                 <div>
                   <p className="text-lg font-semibold">Refine</p>
                   <p className="mt-1 text-sm leading-6 text-slate-600">
-                    Use testing, feedback, and iteration to make what I build clearer
-                    and more dependable.
+                    Use testing, feedback, and iteration to make what I build
+                    clearer and more dependable.
                   </p>
                 </div>
               </div>
@@ -234,48 +226,54 @@ export default function Home() {
           {/* Right story */}
           <div className="space-y-6 text-base leading-8 text-slate-600 sm:text-lg">
             <p>
-              When I joined AkiraChix, I was stepping into a world I had barely
-              understood before. I had never really stopped to think about how
-              websites, applications, or even browser extensions were created.
+              When I joined AkiraChix, I was stepping into a world I had
+              barely understood before. I had never really stopped to think
+              about how websites, applications, or even browser extensions
+              were created.
             </p>
 
             <p>
-              AkiraChix changed that for me. It gave me the opportunity to explore
-              technology from different angles and, more importantly, showed me that
-              I could actually belong in this field.
+              AkiraChix changed that for me. It gave me the opportunity to
+              explore technology from different angles and, more importantly,
+              showed me that I could actually belong in this field.
             </p>
 
             <p>
-              Since then, I have moved between product design, UX research, frontend
-              and backend development, mobile applications, data, IoT, and quality
-              assurance. Each area has helped me understand a different part of the
-              journey from an idea to something people can actually use.
+              Since then, I have moved between product design, UX research,
+              frontend and backend development, mobile applications, data,
+              IoT, and quality assurance. Each area has helped me understand a
+              different part of the journey from an idea to something people
+              can actually use.
             </p>
 
             <p>
-              What interests me most is looking beyond the surface of a product — understanding why something
-              should exist, how people might experience it, what could go wrong, and what could make it better.
+              What interests me most is looking beyond the surface of a
+              product — understanding why something should exist, how people
+              might experience it, what could go wrong, and what could make it
+              better.
             </p>
 
             <p>
-              I also enjoy working with people. I bring energy into collaborative
-              spaces, stay optimistic when things become difficult, and keep working
-              when a problem takes longer than expected to solve.
+              I also enjoy working with people. I bring energy into
+              collaborative spaces, stay optimistic when things become
+              difficult, and keep working when a problem takes longer than
+              expected to solve.
             </p>
 
             {/* Closing statement */}
             <div className="border-l-2 border-purple-400 pl-6 pt-2">
               <p className="text-xl font-semibold leading-8 text-[#17132b] sm:text-2xl">
-                I&apos;m learning to look at technology not as separate pieces, but
-                as parts of the same product story.
+                I&apos;m learning to look at technology not as separate pieces,
+                but as parts of the same product story.
               </p>
             </div>
           </div>
         </div>
       </section>
+
       {/* =========================
-    WHAT I BRING TO THE TABLE
-========================= */}
+          WHAT I BRING TO THE TABLE
+      ========================= */}
       <section
         id="skills"
         className="mx-auto max-w-7xl px-6 py-24 lg:px-10 lg:py-32"
@@ -294,10 +292,9 @@ export default function Home() {
 
         {/* Skills grid */}
         <div className="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-
           {/* =========================
-        WEB DEVELOPMENT
-    ========================= */}
+              WEB DEVELOPMENT
+          ========================= */}
           <div className="rounded-[2rem] border border-purple-100 bg-white p-7 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg">
             <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#efe7ff] text-purple-700">
               <FaGlobe size={21} />
@@ -312,14 +309,16 @@ export default function Home() {
             </p>
 
             <div className="mt-5 flex flex-wrap gap-2">
-              {["React", "JavaScript", "HTML", "CSS", "Next.js"].map((skill) => (
-                <span
-                  key={skill}
-                  className="rounded-full bg-purple-50 px-3 py-1.5 text-xs font-medium text-purple-700"
-                >
-                  {skill}
-                </span>
-              ))}
+              {["React", "JavaScript", "HTML", "CSS", "Next.js"].map(
+                (skill) => (
+                  <span
+                    key={skill}
+                    className="rounded-full bg-purple-50 px-3 py-1.5 text-xs font-medium text-purple-700"
+                  >
+                    {skill}
+                  </span>
+                ),
+              )}
             </div>
 
             <div className="mt-6 flex flex-wrap gap-x-4 gap-y-2 text-sm font-semibold">
@@ -371,8 +370,8 @@ export default function Home() {
           </div>
 
           {/* =========================
-        BACKEND DEVELOPMENT
-    ========================= */}
+              BACKEND DEVELOPMENT
+          ========================= */}
           <div className="rounded-[2rem] border border-purple-100 bg-white p-7 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg">
             <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#efe7ff] text-purple-700">
               <FaServer size={20} />
@@ -421,8 +420,8 @@ export default function Home() {
           </div>
 
           {/* =========================
-        MOBILE DEVELOPMENT
-    ========================= */}
+              MOBILE DEVELOPMENT
+          ========================= */}
           <div className="rounded-[2rem] border border-purple-100 bg-white p-7 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg">
             <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#efe7ff] text-purple-700">
               <FaMobileScreenButton size={21} />
@@ -460,8 +459,8 @@ export default function Home() {
           </div>
 
           {/* =========================
-        PRODUCT DESIGN
-    ========================= */}
+              PRODUCT DESIGN
+          ========================= */}
           <div className="rounded-[2rem] border border-purple-100 bg-white p-7 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg">
             <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#efe7ff] text-purple-700">
               <FaPenRuler size={21} />
@@ -472,8 +471,8 @@ export default function Home() {
             </h3>
 
             <p className="mt-3 text-sm leading-6 text-slate-600">
-              Designing digital products, interfaces, user flows, wireframes, and
-              prototypes.
+              Designing digital products, interfaces, user flows, wireframes,
+              and prototypes.
             </p>
 
             <div className="mt-5 flex flex-wrap gap-2">
@@ -500,20 +499,20 @@ export default function Home() {
           </div>
 
           {/* =========================
-        DATA & MACHINE LEARNING
-    ========================= */}
+              DATA & MACHINE LEARNING
+          ========================= */}
           <div className="rounded-[2rem] border border-purple-100 bg-white p-7 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg">
             <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#efe7ff] text-purple-700">
               <FaChartColumn size={21} />
             </div>
 
             <h3 className="mt-5 text-xl font-semibold text-[#17132b]">
-              Data & Machine Learning
+              Data &amp; Machine Learning
             </h3>
 
             <p className="mt-3 text-sm leading-6 text-slate-600">
-              Working with data analysis, visualization, preprocessing, and machine
-              learning.
+              Working with data analysis, visualization, preprocessing, and
+              machine learning.
             </p>
 
             <div className="mt-5 flex flex-wrap gap-2">
@@ -560,8 +559,8 @@ export default function Home() {
           </div>
 
           {/* =========================
-        IOT
-    ========================= */}
+              IOT
+          ========================= */}
           <div className="rounded-[2rem] border border-purple-100 bg-white p-7 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg">
             <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#efe7ff] text-purple-700">
               <FaMicrochip size={21} />
@@ -572,19 +571,21 @@ export default function Home() {
             </h3>
 
             <p className="mt-3 text-sm leading-6 text-slate-600">
-              Exploring embedded systems, sensors, microcontrollers, and connected
-              devices.
+              Exploring embedded systems, sensors, microcontrollers, and
+              connected devices.
             </p>
 
             <div className="mt-5 flex flex-wrap gap-2">
-              {["Embedded Systems", "Sensors", "Microcontrollers"].map((skill) => (
-                <span
-                  key={skill}
-                  className="rounded-full bg-purple-50 px-3 py-1.5 text-xs font-medium text-purple-700"
-                >
-                  {skill}
-                </span>
-              ))}
+              {["Embedded Systems", "Sensors", "Microcontrollers"].map(
+                (skill) => (
+                  <span
+                    key={skill}
+                    className="rounded-full bg-purple-50 px-3 py-1.5 text-xs font-medium text-purple-700"
+                  >
+                    {skill}
+                  </span>
+                ),
+              )}
             </div>
 
             <div className="mt-6 text-sm font-semibold">
@@ -600,8 +601,8 @@ export default function Home() {
           </div>
 
           {/* =========================
-        QUALITY ASSURANCE
-    ========================= */}
+              QUALITY ASSURANCE
+          ========================= */}
           <div className="rounded-[2rem] border border-purple-100 bg-white p-7 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg">
             <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#efe7ff] text-purple-700">
               <FaShieldHalved size={21} />
@@ -612,8 +613,8 @@ export default function Home() {
             </h3>
 
             <p className="mt-3 text-sm leading-6 text-slate-600">
-              Functional testing, test cases, defect identification, and automated
-              testing.
+              Functional testing, test cases, defect identification, and
+              automated testing.
             </p>
 
             <div className="mt-5 flex flex-wrap gap-2">
@@ -649,8 +650,8 @@ export default function Home() {
           </div>
 
           {/* =========================
-        PRODUCT MANAGEMENT
-    ========================= */}
+              PRODUCT MANAGEMENT
+          ========================= */}
           <div className="rounded-[2rem] border border-purple-100 bg-white p-7 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg">
             <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#efe7ff] text-purple-700">
               <FaClipboardList size={21} />
@@ -661,8 +662,8 @@ export default function Home() {
             </h3>
 
             <p className="mt-3 text-sm leading-6 text-slate-600">
-              Exploring product requirements, feature prioritization, and product
-              documentation.
+              Exploring product requirements, feature prioritization, and
+              product documentation.
             </p>
 
             <div className="mt-5">
@@ -673,8 +674,8 @@ export default function Home() {
           </div>
 
           {/* =========================
-        UX RESEARCH
-    ========================= */}
+              UX RESEARCH
+          ========================= */}
           <div className="rounded-[2rem] border border-purple-100 bg-white p-7 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg">
             <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#efe7ff] text-purple-700">
               <FaMagnifyingGlass size={20} />
@@ -685,15 +686,16 @@ export default function Home() {
             </h3>
 
             <p className="mt-3 text-sm leading-6 text-slate-600">
-              Developing an understanding of user needs, behaviors, and usability.
+              Developing an understanding of user needs, behaviors, and
+              usability.
             </p>
           </div>
         </div>
       </section>
 
       {/* =========================
-    WORK
-========================= */}
+          WORK
+      ========================= */}
       <section
         id="work"
         className="mx-auto max-w-7xl px-6 py-24 lg:px-10 lg:py-32"
@@ -705,14 +707,14 @@ export default function Home() {
           </h2>
 
           <p className="mt-5 max-w-2xl text-lg leading-8 text-slate-600">
-            A selection of personal and collaborative projects I have built across
-            different areas of technology.
+            A selection of personal and collaborative projects I have built
+            across different areas of technology.
           </p>
         </div>
 
         {/* =========================
-      PERSONAL PROJECTS
-  ========================= */}
+            PERSONAL PROJECTS
+        ========================= */}
         <div className="mt-16">
           <div className="mb-8">
             <p className="text-sm font-semibold uppercase tracking-[0.16em] text-purple-500">
@@ -725,12 +727,10 @@ export default function Home() {
           </div>
 
           <div className="grid gap-5 lg:grid-cols-2">
-
             {/* =========================
-    CAMPUS BUDGET TRACKER
-========================= */}
+                CAMPUS BUDGET TRACKER
+            ========================= */}
             <article className="group overflow-hidden rounded-[2rem] border border-purple-100 bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl">
-
               {/* Campus Budget Tracker Logo */}
               <div className="relative h-48 overflow-hidden bg-[#f1e9ff]">
                 <Image
@@ -752,9 +752,9 @@ export default function Home() {
                 </h3>
 
                 <p className="mt-3 text-sm leading-6 text-slate-600">
-                  A personal budgeting platform that helps students track income and
-                  expenses, monitor budgets, review financial history, and understand
-                  their spending patterns.
+                  A personal budgeting platform that helps students track
+                  income and expenses, monitor budgets, review financial
+                  history, and understand their spending patterns.
                 </p>
 
                 {/* Technologies */}
@@ -793,8 +793,8 @@ export default function Home() {
             </article>
 
             {/* =========================
-          SHERE CELEBRATION MOMENTS
-      ========================= */}
+                SHERE CELEBRATION MOMENTS
+            ========================= */}
             <article className="group overflow-hidden rounded-[2rem] border border-purple-100 bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl">
               {/* Project logo / placeholder */}
               <div className="relative h-48 overflow-hidden bg-[#f7f2ff]">
@@ -817,8 +817,8 @@ export default function Home() {
                 </h3>
 
                 <p className="mt-3 text-sm leading-6 text-slate-600">
-                  A web platform created for sharing and preserving celebration
-                  moments through a simple digital experience.
+                  A web platform created for sharing and preserving
+                  celebration moments through a simple digital experience.
                 </p>
 
                 <div className="mt-4 flex flex-wrap gap-2">
@@ -834,7 +834,7 @@ export default function Home() {
 
                 <div className="mt-5 flex items-center gap-5">
                   <a
-                    href="https://shere-celebretion-moments.netlify.app"
+                    href="https://shere-celebretion-moments.netlify.app/"
                     target="_blank"
                     rel="noreferrer"
                     className="text-sm font-semibold text-purple-700 transition hover:text-purple-900"
@@ -855,8 +855,8 @@ export default function Home() {
             </article>
 
             {/* =========================
-          MY FAN PAGE
-      ========================= */}
+                MY FAN PAGE
+            ========================= */}
             <article className="group overflow-hidden rounded-[2rem] border border-purple-100 bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl">
               {/* My Fan Page Logo */}
               <div className="relative h-48 overflow-hidden bg-[#f1e9ff]">
@@ -875,12 +875,12 @@ export default function Home() {
                 </p>
 
                 <h3 className="mt-2 text-2xl font-semibold text-[#17132b]">
-                  My Fun Page
+                  My Fan Page
                 </h3>
 
                 <p className="mt-3 text-sm leading-6 text-slate-600">
-                  A personal web experience focused on structured content, visual
-                  presentation, and interactive user interfaces.
+                  A personal web experience focused on structured content,
+                  visual presentation, and interactive user interfaces.
                 </p>
 
                 <div className="mt-4 flex flex-wrap gap-2">
@@ -917,10 +917,9 @@ export default function Home() {
             </article>
 
             {/* =========================
-    PAMODZI GROUP PROJECT
-========================= */}
+                PAMODZI GROUP PROJECT
+            ========================= */}
             <article className="group overflow-hidden rounded-[2rem] border border-purple-100 bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl">
-
               {/* Pamodzi Logo */}
               <div className="relative h-48 overflow-hidden bg-[#f7f2ff]">
                 <Image
@@ -942,21 +941,23 @@ export default function Home() {
                 </h3>
 
                 <p className="mt-3 text-sm leading-6 text-slate-600">
-                  A group-built digital platform designed to connect commercial buyers
-                  with agricultural cooperatives, supporting produce sourcing, demand
-                  campaigns, farmer listings, quality verification, and coordinated
-                  pickup.
+                  A group-built digital platform designed to connect commercial
+                  buyers with agricultural cooperatives, supporting produce
+                  sourcing, demand campaigns, farmer listings, quality
+                  verification, and coordinated pickup.
                 </p>
 
                 <div className="mt-4 flex flex-wrap gap-2">
-                  {["Web Development", "Product Platform", "Dashboard"].map((tech) => (
-                    <span
-                      key={tech}
-                      className="rounded-full bg-purple-50 px-3 py-1.5 text-xs font-medium text-purple-700"
-                    >
-                      {tech}
-                    </span>
-                  ))}
+                  {["Web Development", "Product Platform", "Dashboard"].map(
+                    (tech) => (
+                      <span
+                        key={tech}
+                        className="rounded-full bg-purple-50 px-3 py-1.5 text-xs font-medium text-purple-700"
+                      >
+                        {tech}
+                      </span>
+                    ),
+                  )}
                 </div>
 
                 <div className="mt-5 flex items-center gap-5">
@@ -982,7 +983,7 @@ export default function Home() {
             </article>
           </div>
         </div>
-          </section>
+      </section>
 
       {/* =========================
           LET'S CONNECT
@@ -991,141 +992,77 @@ export default function Home() {
         id="contact"
         className="mx-auto max-w-7xl px-6 py-24 lg:px-10 lg:py-32"
       >
-        <div className="overflow-hidden rounded-[2.5rem] bg-[#efe7ff]">
-          <div className="grid gap-10 px-8 py-12 sm:px-12 lg:grid-cols-[1.2fr_0.8fr] lg:px-16 lg:py-16">
+        <div className="grid gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
+          {/* Left side */}
+          <div>
+            <p className="text-sm font-semibold uppercase tracking-[0.16em] text-purple-500">
+              Let&apos;s Connect
+            </p>
 
-            {/* Left side */}
-            <div>
-              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-purple-600">
-                Let&apos;s Connect
+            <h2 className="mt-3 text-4xl font-bold tracking-tight text-[#17132b] sm:text-5xl">
+              Have a project, an opportunity, or an idea?
+            </h2>
+
+            <p className="mt-6 max-w-xl text-lg leading-8 text-slate-600">
+              I&apos;d love to hear from you. Whether you want to talk about a
+              project, collaboration, or something you&apos;re building, send
+              me a message and I&apos;ll get back to you.
+            </p>
+
+            <div className="mt-8">
+              <p className="text-sm font-medium text-slate-500">
+                Prefer email?
               </p>
 
-              <h2 className="mt-4 max-w-2xl text-4xl font-bold leading-tight tracking-tight text-[#17132b] sm:text-5xl">
-                Have a project, an opportunity, or an idea?
-              </h2>
-
-              <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-700">
-                I&apos;d love to hear from you. Whether you&apos;re interested
-                in my work, would like to collaborate, or simply want to start
-                a conversation, feel free to reach out.
-              </p>
-
-              <div className="mt-8 flex flex-wrap gap-4">
-
-                {/* Email */}
-                <a
-                  href="mailto:gloryymungathia@gmail.com"
-                  className="inline-flex items-center gap-2 rounded-full bg-purple-600 px-6 py-3.5 text-sm font-semibold text-white shadow-lg shadow-purple-200 transition hover:-translate-y-0.5 hover:bg-purple-700"
-                >
-                  Send Me an Email
-                  <FaEnvelope size={15} />
-                </a>
-
-                {/* GitHub */}
-                <a
-                  href="https://github.com/GloryMungathia"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="inline-flex items-center gap-2 rounded-full border border-purple-200 bg-white px-6 py-3.5 text-sm font-semibold text-purple-700 transition hover:-translate-y-0.5 hover:bg-purple-50"
-                >
-                  GitHub
-                  <FaGithub size={15} />
-                </a>
-
-              </div>
+              <a
+                href="mailto:gloryymungathia@gmail.com"
+                className="mt-2 inline-flex text-base font-semibold text-purple-700 transition hover:text-purple-900"
+              >
+                gloryymungathia@gmail.com
+              </a>
             </div>
-
-            {/* Right side */}
-            <div className="flex items-center lg:justify-end">
-              <div className="w-full max-w-sm rounded-[2rem] border border-purple-200 bg-white p-7 shadow-sm">
-
-                <p className="text-sm font-semibold uppercase tracking-[0.16em] text-purple-500">
-                  Find me online
-                </p>
-
-                <div className="mt-6 space-y-4">
-
-                  {/* GitHub */}
-                  <a
-                    href="https://github.com/GloryMungathia"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="flex items-center gap-4 rounded-2xl p-3 transition hover:bg-[#f7f2ff]"
-                  >
-                    <span className="flex h-11 w-11 items-center justify-center rounded-full bg-[#efe7ff] text-purple-700">
-                      <FaGithub size={19} />
-                    </span>
-
-                    <div>
-                      <p className="text-sm font-semibold text-[#17132b]">
-                        GitHub
-                      </p>
-                      <p className="text-sm text-slate-500">
-                        View my projects and code
-                      </p>
-                    </div>
-                  </a>
-
-                  {/* LinkedIn */}
-                  <a
-                    href="https://www.linkedin.com/in/glory-mung-athia-235645401/"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="flex items-center gap-4 rounded-2xl p-3 transition hover:bg-[#f7f2ff]"
-                  >
-                    <span className="flex h-11 w-11 items-center justify-center rounded-full bg-[#efe7ff] text-purple-700">
-                      <FaLinkedinIn size={18} />
-                    </span>
-
-                    <div>
-                      <p className="text-sm font-semibold text-[#17132b]">
-                        LinkedIn
-                      </p>
-                      <p className="text-sm text-slate-500">
-                        Connect with me professionally
-                      </p>
-                    </div>
-                  </a>
-
-                  {/* Email */}
-                  <a
-                    href="mailto:gloryymungathia@gmail.com"
-                    className="flex items-center gap-4 rounded-2xl p-3 transition hover:bg-[#f7f2ff]"
-                  >
-                    <span className="flex h-11 w-11 items-center justify-center rounded-full bg-[#efe7ff] text-purple-700">
-                      <FaEnvelope size={18} />
-                    </span>
-
-                    <div>
-                      <p className="text-sm font-semibold text-[#17132b]">
-                        Email
-                      </p>
-                      <p className="text-sm text-slate-500">
-                        Send me a message
-                      </p>
-                    </div>
-                  </a>
-
-                </div>
-              </div>
-            </div>
-
           </div>
+
+          <ContactForm />
         </div>
       </section>
 
       {/* =========================
           FOOTER
       ========================= */}
-      <footer className="border-t border-purple-100">
-        <div className="mx-auto flex max-w-7xl flex-col gap-3 px-6 py-8 text-sm text-slate-500 sm:flex-row sm:items-center sm:justify-between lg:px-10">
+      <footer className="border-t border-purple-100 bg-white">
+        <div className="mx-auto flex max-w-7xl flex-col gap-4 px-6 py-8 text-sm text-slate-500 sm:flex-row sm:items-center sm:justify-between lg:px-10">
           <p>
-            © {new Date().getFullYear()} Glory Mung&apos;athia. All rights reserved.
+            © {new Date().getFullYear()} Glory Mung&apos;athia. All rights
+            reserved.
           </p>
 
-          <p>
-            Designed and built with intention.
-          </p>
+          <div className="flex items-center gap-4">
+            <a
+              href="https://github.com/GloryMungathia"
+              target="_blank"
+              rel="noreferrer"
+              className="transition hover:text-purple-700"
+            >
+              GitHub
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/glory-mung-athia-70b233445?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+              target="_blank"
+              rel="noreferrer"
+              className="transition hover:text-purple-700"
+            >
+              LinkedIn
+            </a>
+
+            <a
+              href="mailto:gloryymungathia@gmail.com"
+              className="transition hover:text-purple-700"
+            >
+              Email
+            </a>
+          </div>
         </div>
       </footer>
     </main>
